@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vecher Daria</title>
+<style>
+
+.services {
+  background-color: #ffffff; /* Цвет фона */
+  padding: 20px; /* Внутренние отступы */
+}
+
+.services h2 {
+  color: black; /* Цвет текста заголовка */
+  margin-bottom: 15px; /* Отступ снизу для заголовка */
+}
+
+.service-item img {
+  width: 100px; /* Ширина иконки */
+  height: auto; /* Высота иконки, сохраняющая пропорции */
+  margin-bottom: 10px; /* Отступ снизу для иконки */
+}
+
+.service-item h3 {
+  color: #e60000; /* Цвет текста подзаголовка */
+  margin-bottom: 5px; /* Отступ снизу для подзаголовка */
+}
+
+.service-item p {
+  color: #666; /* Цвет текста параграфа */
+  font-size: 14px; /* Размер шрифта параграфа */
+}
+
+.hero {
+  background-image: url('your-hero-image.webp');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 180px 20px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.hero p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  padding: 10px 30px;
+  background-color: #5900b3;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #47476b;
+}
+
+.foot{
+    padding-top: 0px;
+    margin-right: 20px;
+    margin-left: 570px;
+    text-align: end;
+    font-size: 13px;
+    font-weight: 50;
+    color:rgb(255, 255, 255); 
+}
+
+.topnav {
+  background-color: white;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 0 0px;
+}
+
+.topnav .logo {
+  float: left;
+  margin-right: 30px;
+  height: 100px;
+  width: auto;
+}
+
+.topnav .menu {
+  display: flex;
+  width: 100%;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover, .topnav a.active {
+  background-color: #5900b3;
+  color: white;
+border-radius: 5px;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  border: black;
+  margin-left: auto;
+  font-size: 17px;
+}
+
+    header {
+        font-family: 'Arial', sans-serif;
+        font-size: 18px;
+        background-color: white;
+        color: white;
+        text-align: center;
+        padding: 0px 0;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif; 
+        font-size: 18px; 
+        background-color: white;
+        color: #333;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+  
+    section {
+        text-align: center;
+        padding: 20px;
+    }
+
+    img {
+        max-width: 50%;
+        height: 100;
+    }
+
+   
+    h2 {
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    h3 {
+color: black;
+font-weight: bold;
+}
+
+    p {
+        color: black;
+        font-size: 16px;
+    }
+footer {
+background-color: #29293d;
+ float: down; 
+}
+
+.logo { 
+    float: left; 
+    margin: 20px 40px; 
+    height: 80px;
+    width: auto;
+
+}
+
+.testimonials {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+}
+
+.testimonials h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.testimonial-item {
+  margin-top: 20px;
+}
+
+.testimonial-item p {
+  font-style: italic;
+  font-size: 18px;
+  color: #555;
+}
+
+.testimonial-item cite {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-style: normal;
+  color: #777;
+}
+
+.sale {
+  background-color: #f2f2f2; /* Цвет фона */
+  border: 1px solid #dcdcdc; /* Граница */
+  padding: 20px; /* Внутренние отступы */
+  margin: 20px 0; /* Внешние отступы сверху и снизу */
+}
+
+.sale h2 {
+  color: #e60000; /* Цвет текста заголовка */
+  margin-bottom: 10px; /* Отступ снизу для заголовка */
+}
+
+.sale p {
+  color: #333; /* Цвет текста параграфа */
+  font-size: 16px; /* Размер шрифта параграфа */
+}
+
+</style>
+</head>
+<body>
+
+<header>
+
+<header>
+  <nav class="topnav">
+    <img class="logo" src="logo.png" alt="VOKS Logo">
+    <div class="menu">
+      <a href="#home" class="active">Главная</a>
+      <a href="#news">Каталог</a>
+      <a href="#contact">Контакты</a>
+      <a href="#about">О Нас</a>
+      <a href="#services">Услуги</a>
+      <input type="text" placeholder="Поиск..">
+    </div>
+  </nav>
+  </header>
+<body>
+
+
+<section class="hero">
+  <h1>Welcome to VOKS</h1>
+  <p>Автоматизация Промышленной Маркировки</p>
+  <a href="#contact" class="cta-button">Get Started</a>
+</section>
+
+<section class="services">
+  <h2>Наши услуги</h2>
+  <div class="service-item">
+    <img src="service-icon-1.png" alt="Service 1">
+    <h3>Ремонт техники</h3>
+    <p>Восстановление принтеров, лент и др.</p>
+  </div>
+ <div class="service-item">
+    <img src="service-icon-2.png" alt="Service 1">
+    <h3>Доставка техники</h3>
+    <p>Доставим продукцию курьером "до двери"</p>
+  </div>
+  </section>
+
+<h2>НОВИНКИ</h2>
+
+<section>
+    <div class="carousel">
+        <img src="image-1.png" alt="Изображение 1">
+        <img src="image-2.png" alt="Изображение 2">
+        <img src="image-3.webp" alt="Изображение 3">
+    </div>
+</section>
+
+<section>
+<style>
+h2 {
+        color: black;
+        font-size: 24px;
+        font-weight: bold;
+    }
+img {
+        max-width:70%;
+        height: 400px;
+    }
+
+</style>
+</section>
+
+<section class="sale">
+
+    <h2>АКЦИЯ</h2>
+    <p>При профилактическом обслуживании КАБЕЛЬНОГО ПРИНТЕРА CANON
+
+ - бесплатный технический осмотр и исправление ошибок печати!</p>
+</section>
+
+<section class="testimonials">
+  <h2>Что говорят наши клиенты?</h2>
+  <div class="testimonial-item">
+    <p>"VOKS изменил наше производство с помощью инновационных решений "</p>
+    <cite>- Представитель ООО "ТЕХНОСПАН"</cite>
+  </div>
+ </section>
+
+
+</body>
+
+<footer>
+     <img class="logo2"   src="logo.png" alt="picture 1">
+    <p class="foot">  тел.  +375 29 3617775</p>
+     </footer>
+
+
+<style>
+    footer {
+        margin: 0;
+        padding: 0;
+        height: 45vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+  </footer><!-- End  Footer -->
+
+   
+</body>
+</html>
